@@ -9,18 +9,38 @@
     <!-- bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(190, 186, 186);
+        }
 
+        body h2 {
+            color: royalblue;
+        }
+
+        #spinner {
+            display: none;
+        }
+
+        #details img {
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
     <h2 class="text-center mt-3 mb-3">Book Archive</h2>
 
     <div class="input-group mb-3 w-75 mx-auto">
-        <input id="searchField" type="text" class="form-control" placeholder="Enter  Book "
+        <input id="searchField" type="text" class="form-control" placeholder="Enter a Book Name"
             aria-label="Recipient's username" aria-describedby="button-addon2">
         <button class="btn btn-outline-secondary" type="search" id="searchBtn" onclick="searchBook()">Button</button>
     </div>
-
+    <div id="spinner" class="mx-auto text-center">
+        <div class="spinner-border m-5" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
     <div id="error" class="w-50 mx-auto">
 
     </div>
@@ -28,7 +48,7 @@
 
     </div>
     <section class="">
-        <div id="details" class="row row-cols-1 row-cols-md-3 g-4 w-75 mx-auto">
+        <div id="details" class="row row-cols-1 row-cols-md-3 g-4  mx-auto">
 
 
         </div>
