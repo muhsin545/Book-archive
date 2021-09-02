@@ -1,7 +1,11 @@
+// Significant Id 
+
 const searchInput = document.getElementById('searchField');
 const results = document.getElementById('sumOfResults');
 const error = document.getElementById('error');
 
+
+// SPINNER
 const toggolespinner = displayStyle => {
     document.getElementById('spinner').style.display = displayStyle;
 }
@@ -23,7 +27,7 @@ const searchBook = () => {
 
 }
 
-
+// Show Data 
 const showData = detailData => {
     console.log(detailData)
 
